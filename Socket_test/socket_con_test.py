@@ -12,7 +12,7 @@ while True:
 	if not data:
 		break
 	tcpCliSock.send(data)#发送
-	data=tcpCliSock.recv(BUFSIZE)//接受
+	data=tcpCliSock.recv(BUFSIZE)#接受
 	if not data:
 		break
 	print data
